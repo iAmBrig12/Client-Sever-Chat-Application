@@ -16,16 +16,14 @@ This project implements a chat application that enables users to exchange messag
 1. Open a terminal window.
 2. Navigate to the directory where `server.py` is located.
 3. Start the server by running the following command:
-
    ```bash
    python3 server.py
 ## Running the Client
-1. Open a terminal window. (Note this terminal must be on the same machine as the running server program.)
+1. Open a terminal window.
 2. Navigate to the directory where `client.py` is located.
-3. Start the client by running the following command:
-
+3. Start the client by running the following command: (note the server hostname will be the hostname of the machine that server.py is running on)
    ```bash
-   python3 client.py
+   python3 client.py <server_hostname>
 4. When prompted, enter a username (1-32 characters, no spaces).
 5. Once registered, you can start sending messages to the chatroom.
 

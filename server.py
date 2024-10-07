@@ -2,7 +2,7 @@ import socket
 import select
 
 # server constants
-HOST = '127.0.0.1'	# localhost for testing
+HOST = '0.0.0.0'	# open ip for testing
 PORT = 12345		# arbitrary non-privelaged port
 
 # manage connected clients and their usernames 

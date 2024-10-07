@@ -2,9 +2,13 @@ import socket
 import select
 import sys
 
+if len(sys.argv) < 2:
+    print("python3 client.py <server_hostname>")
+    exit()
+
 # client constants
-HOST = '127.0.0.1'
-PORT = 12345
+HOST = sys.argv[1]  # hostname
+PORT = 12345        # arbitrary non-privelaged port
 
 def start_client():
     # start client socket
